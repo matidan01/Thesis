@@ -1,0 +1,37 @@
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+    showstringspaces=false,
+	basicstyle=\scriptsize\ttfamily,
+	commentstyle={\color{olive}},
+	identifierstyle=\color{black},
+	ndkeywordstyle={\color{blue}},
+	stringstyle={\color{magenta}},
+	emphstyle={},
+	keywordstyle={\color{blue}},
+	breaklines=true,
+	numbers=left,
+	numberstyle=\tiny\color{gray},
+	numbersep=10pt,
+	tabsize=2,
+	frame=single,
+        rulecolor=\color{gray},
+        frameround=tttt,
+        framesep=5pt,
+        captionpos=b
+}
+
+\lstdefinelanguage{Java}{
+    comment=[l]{//},
+    morecomment=[s]{/*}{*/},
+    morestring=[b]",
+    emph={String, Integer, Boolean, Double, Character},
+    keywords={
+        abstract, assert, boolean, break, byte, case, catch, char, class, const, continue, default, 
+        do, double, else, enum, extends, false, final, finally, float, for, goto, if, implements, import, 
+        instanceof, int, interface, long, native, new, null, package, private, protected, public, return, 
+        short, static, strictfp, super, switch, synchronized, this, throw, throws, transient, true, try, 
+        void, volatile, while
+    }
+}
